@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="box">
+            <h1>Light Bulb Switch</h1>
+        </header>
+        <section>
+            <div class="lightBulb">
+                <img src="white.png" id="whitebulb" class="whitebulb">
+            </div>
+            <div class="buttons">
+                <button id="white" class="white" onclick="return white()">WHITE</button>
+                <button id="red" class="red" onclick="return red()">RED</button>
+                <button id="yellow" class="yellow" onclick="return yellow()">YELLOW</button>
+                <button id="blue" class="blue" onclick="return blue()">BLUE</button>
+
+            </div>
+        </section>
+        </div>
+    </div>
+    <script>
+        function white(){
+            document.getElementById('whitebulb').src="white.png";
+        }
+        function red(){
+            document.getElementById('whitebulb').src="red.png";
+        }
+        function blue(){
+            document.getElementById('whitebulb').src="blue2.png";
+        }
+        function yellow(){
+            document.getElementById('whitebulb').src="yellow.png";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(245, 245, 245);
+        }
+        header{
+            background-color: aqua;
+            font-style: italic;
+            text-align: center;
+            text-shadow: 1px 1px 2px blueviolet;
+            margin-top: 10px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        button{
+            margin-top: 30px;
+            background-color: transparent;
+            outline: none;
+            border:  solid black 2px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-style: italic;
+            height: 30px;
+            width: 55px;
+            cursor: pointer;
+        }
+        #whitebtn{
+            background-color: white;
+            width: 60px;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+            width: 75px;
+        }
+        #blue{
+            background-color: rgb(0, 140, 255);
+            width: 58px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="box">
+            <h1>Light Bulb Switch</h1>
+        </div>
+    </div>
+    </header>
+    <section>
+            <div class="Bulb">
+                <img src="white.png" id="white" class="white">
+            </div>
+            <div class="bulb_button">
+                <button id="whitebtn" class="white" onclick="return white()">WHITE</button>
+                <button id="red" class="red" onclick="return red()">RED</button>
+                <button id="yellow" class="yellow" onclick="return yellow()">YELLOW</button>
+                <button id="blue" class="blue" onclick="return blue()">BLUE</button>
+            </div>
+    </section>
+    <script>
+        function white(){
+            document.getElementById('white').src="white.png";
+        }
+        function red(){
+            document.getElementById('white').src="red.png";
+        }
+        function blue(){
+            document.getElementById('white').src="blue2.png";
+        }
+        function yellow(){
+            document.getElementById('white').src="yellow.png";
+        }
+    </script>
+</body>
+</html>
